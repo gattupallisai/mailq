@@ -42,7 +42,8 @@ async send(@Body() data: any, @Req() req: Request) {
 //@UseGuards(JwtAuthGuard)
 @Get('inbox')
 async inbox(@Req() req: Request) {
-  const user = req.user as { email: string; password: string };
+  // const user = req.user as { email: string; password: string };
+  const user= {email : "adi.penumarthi@gmail.com",password: "dukp ushi ubdz wlsd" }
   return this.mailService.getInbox(user);
 }
 
