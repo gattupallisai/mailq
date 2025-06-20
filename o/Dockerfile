@@ -2,7 +2,7 @@
 FROM node:18
 
 # Create and set the working directory inside the container
-WORKDIR /usr/src/app
+WORKDIR .
 
 # Copy package.json and package-lock.json before copying the rest
 # This allows Docker to cache npm install if nothing has changed
